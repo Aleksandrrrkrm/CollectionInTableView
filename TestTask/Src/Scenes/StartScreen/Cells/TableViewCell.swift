@@ -38,7 +38,7 @@ class TableViewCell: UITableViewCell {
         layout.invalidateLayout()
         
         collectionView.register(CollectionViewCell.self,
-                                forCellWithReuseIdentifier: "CVCell")
+                                forCellWithReuseIdentifier: R.string.scene.collectionCell())
     }
     
     func configureViews() {
@@ -64,7 +64,7 @@ extension TableViewCell: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CVCell",
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: R.string.scene.collectionCell(),
                                                          for: indexPath) as? CollectionViewCell {
             cell.setupCell(withImage: photos?[indexPath.row].url ?? "")
             return cell

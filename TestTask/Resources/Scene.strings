@@ -1,0 +1,10 @@
+/* 
+  Scene.strings
+  TestTask
+
+  Created by Александр Головин on 07.11.2022.
+  
+*/
+
+"collectionCell" = "CVCell";
+"tableCell" = "TableViewCell";

@@ -20,6 +20,7 @@
 		C2547BC12902BFCC00FA0649 /* StartConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2547BBB2902BFCC00FA0649 /* StartConfigurator.swift */; };
 		C2547BC52902BFD500FA0649 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2547BC32902BFD500FA0649 /* StartView.swift */; };
 		C2547BC62902BFD500FA0649 /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2547BC42902BFD500FA0649 /* StartPresenter.swift */; };
+		C2BC0B1C29192DF400D189D8 /* Scene.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2BC0B1B29192DF400D189D8 /* Scene.strings */; };
 		C2D860672902D5D30024B8D2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D860662902D5D30024B8D2 /* TableViewCell.swift */; };
 		C2D860692902E0540024B8D2 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D860682902E0540024B8D2 /* R.generated.swift */; };
 		C2D8606B2902E66A0024B8D2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D8606A2902E66A0024B8D2 /* CollectionViewCell.swift */; };
@@ -42,6 +43,7 @@
 		C2547BBB2902BFCC00FA0649 /* StartConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartConfigurator.swift; sourceTree = "<group>"; };
 		C2547BC32902BFD500FA0649 /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		C2547BC42902BFD500FA0649 /* StartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
+		C2BC0B1B29192DF400D189D8 /* Scene.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Scene.strings; sourceTree = "<group>"; };
 		C2D860662902D5D30024B8D2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C2D860682902E0540024B8D2 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		C2D8606A2902E66A0024B8D2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				C2547BA72902BC4A00FA0649 /* Assets.xcassets */,
+				C2BC0B1B29192DF400D189D8 /* Scene.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2547BAB2902BC4A00FA0649 /* LaunchScreen.storyboard in Resources */,
+				C2BC0B1C29192DF400D189D8 /* Scene.strings in Resources */,
 				C2547BA82902BC4A00FA0649 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

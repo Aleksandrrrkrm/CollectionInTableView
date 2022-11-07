@@ -179,6 +179,47 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
+  /// This `R.string` struct is generated, and contains static references to 1 localization tables.
+  struct string {
+    /// This `R.string.scene` struct is generated, and contains static references to 2 localization keys.
+    struct scene {
+      /// Value: CVCell
+      static let collectionCell = Rswift.StringResource(key: "collectionCell", tableName: "Scene", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: TableViewCell
+      static let tableCell = Rswift.StringResource(key: "tableCell", tableName: "Scene", bundle: R.hostingBundle, locales: [], comment: nil)
+
+      /// Value: CVCell
+      static func collectionCell(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("collectionCell", tableName: "Scene", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Scene", preferredLanguages: preferredLanguages) else {
+          return "collectionCell"
+        }
+
+        return NSLocalizedString("collectionCell", tableName: "Scene", bundle: bundle, comment: "")
+      }
+
+      /// Value: TableViewCell
+      static func tableCell(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("tableCell", tableName: "Scene", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Scene", preferredLanguages: preferredLanguages) else {
+          return "tableCell"
+        }
+
+        return NSLocalizedString("tableCell", tableName: "Scene", bundle: bundle, comment: "")
+      }
+
+      fileprivate init() {}
+    }
+
+    fileprivate init() {}
+  }
+
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()

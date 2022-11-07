@@ -36,7 +36,7 @@ class StartViewController: UIViewController {
         tableView.allowsSelection = false
         tableView.rowHeight = 400
         tableView.sectionHeaderHeight = UITableView.automaticDimension
-        self.tableView.register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
+        self.tableView.register(TableViewCell.self, forCellReuseIdentifier: R.string.scene.tableCell())
     }
     
     func setupViews() {
@@ -69,7 +69,7 @@ extension StartViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: R.string.scene.tableCell(), for: indexPath) as! TableViewCell
         cell.setupCell(withImage: data.photo[indexPath.section])
         print(indexPath.row)
         return cell
