@@ -1,4 +1,3 @@
-# CollectionInTableView
 
 # Hi!
 
